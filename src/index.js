@@ -99,4 +99,16 @@ store.dispatch(setCount({count: 200}));
 
 unsubscribe();
 
+const person = {
+    name: "Venakt",
+    location: "Hyderabad"
+};
+
+const user = {
+    ...person,
+    useername: "tadivenkat"
+};
+
+console.log(user);
+
 ////////////////////////////////////////////////////////////////////////////////////////////
