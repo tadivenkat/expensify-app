@@ -106,7 +106,7 @@ const person = {
 
 const user = {
     ...person,
-    useername: "tadivenkat"
+    location: "Foster City"
 };
 
 console.log(user);
