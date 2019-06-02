@@ -1,11 +1,20 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {addExpenseAction} from '../actions/expenses';
+import ExpenseForm from './ExpenseForm';
 
-const AddExpensePage = () => {
+
+const AddExpensePage = (props) => {
     return (
         <div>
-            <p>Add Expense Page</p>
+            <h1>Add Expense Page</h1>
+            <ExpenseForm onSubmit={(expense) => {
+                console.log(expense);
+                props.dispatch(addExpenseAction(expense));
+                props.history.push('/');
+            }}/>
         </div>
     );
 }
 
-export default AddExpensePage;
+export default connect()(AddExpensePage);
