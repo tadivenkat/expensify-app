@@ -100,6 +100,7 @@ class ExpenseForm extends React.Component {
                         value={this.state.note}
                         onChange={this.onNoteChange}></textarea>
                     <DatePicker 
+                        todayButton={"Today"}
                         selected={new Date(this.state.createdAt)} 
                         onChange={this.onDateChange}
                         title="Created At"

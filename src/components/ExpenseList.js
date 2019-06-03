@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ExpenseListItem from './ExpenseListItem';
 import filterExpenses from '../selectors/expenses';
+import moment from 'moment';
 
 
 const ExpenseList = (props) => {
@@ -9,10 +10,10 @@ const ExpenseList = (props) => {
     return (
         <div>
             <h1>Expense List</h1>
-            <h4>Filters Applied: Text: {text}, SortBy: {sortBy}, startDate: {startDate}, endDate: {endDate}</h4>
-            <ul>{props.expenses.map((expense) => <ExpenseListItem 
+            <h4>Filters Applied: Text: {text}, SortBy: {sortBy}, startDate: {moment(startDate).format('DD-MMM-YYYY')}, endDate: {moment(endDate).format('DD-MMM-YYYY')}</h4>
+            {props.expenses.map((expense) => <ExpenseListItem 
                                                     key={expense.id} 
-                                                    expense={expense}/>)}</ul>
+                                                    expense={expense}/>)}
         </div>
     );
 };

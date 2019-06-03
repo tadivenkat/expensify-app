@@ -6,11 +6,13 @@ const Header = (props) => {
         <div>
             <header>
                 <h1>Keilon Software Solutions</h1>
-                <NavLink activeClassName="is-active" to="/">Home</NavLink>
-                <NavLink activeClassName="is-active" to="/create">Add Expense</NavLink>
-                <NavLink activeClassName="is-active" to="/edit/x">Edit Expense</NavLink>
-                <NavLink activeClassName="is-active" to="/view">View Expenses</NavLink>
-                <NavLink activeClassName="is-active" to="/help">Help</NavLink>
+                <table><tr>
+                    <td><NavLink activeClassName="is-active" to="/">Home</NavLink></td>
+                    <td><NavLink activeClassName="is-active" to="/create">Add Expense</NavLink></td>
+                    <td><NavLink activeClassName="is-active" to="/edit/x">Edit Expense</NavLink></td>
+                    <td><NavLink activeClassName="is-active" to="/view">View Expenses</NavLink></td>
+                    <td><NavLink activeClassName="is-active" to="/help">Help</NavLink></td>
+                </tr></table>
             </header>
         </div>
     );
