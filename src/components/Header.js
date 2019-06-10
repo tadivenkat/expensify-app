@@ -5,7 +5,7 @@ const Header = (props) => {
     return (
         <div>
             <header>
-                <h1>Keilon Software Solutions</h1>
+                <h1>Keilon Software Solutions Private Ltd</h1>
                 <table><tr>
                     <td><NavLink activeClassName="is-active" to="/">Home</NavLink></td>
                     <td><NavLink activeClassName="is-active" to="/create">Add Expense</NavLink></td>
