@@ -1,0 +1,556 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should NOT update amount state when the amount input has invalid value 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Should render error message when the form is invalid 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Should render error message when the form is invalid 2`] = `
+<div>
+  <p>
+    Please enter description and amount
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Should update amount state when the amount input changes 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value="30"
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Should update description state when input changes 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value="Test Expense Description"
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Should update note state when textarea changes 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value="Test Expense Note"
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Testing ExpenseForm component snapshot 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value=""
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value=""
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value=""
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:00.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;
+
+exports[`Testing ExpenseForm component snapshot with default expense property 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Description"
+      type="text"
+      value="pen"
+    />
+    <input
+      onChange={[Function]}
+      placeholder="Amount"
+      type="number"
+      value={100}
+    />
+    <textarea
+      name="note"
+      onChange={[Function]}
+      placeholder="Add a Note for this Expense"
+      value="test note for test expense"
+    />
+    <DatePicker
+      allowSameDay={false}
+      dateFormat="dd-MMM-yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      nextMonthButtonLabel="Next month"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected={1970-01-01T00:00:08.000Z}
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      title="Created At"
+      todayButton="Today"
+      withPortal={false}
+    />
+    <input
+      type="submit"
+      value="Save"
+    />
+  </form>
+</div>
+`;

@@ -5,7 +5,7 @@ import filterExpenses from '../selectors/expenses';
 import moment from 'moment';
 
 
-const ExpenseList = (props) => {
+export const ExpenseList = (props) => {
     const {text, sortBy, startDate, endDate} = props.filters;
     return (
         <div>

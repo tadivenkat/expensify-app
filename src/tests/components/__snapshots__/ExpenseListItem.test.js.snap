@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ExpenseListItem Component Snapshot 1`] = `
+<div>
+  <Link
+    to="/edit/1"
+  >
+    <h2>
+      pen
+    </h2>
+  </Link>
+  <p>
+    Id: 
+    1
+  </p>
+  <p>
+    Amount: 
+    10000
+  </p>
+  <p>
+    CreatedAt: 
+    01-Jan-1970
+  </p>
+  <p>
+    Note: 
+    test note for test expense
+  </p>
+</div>
+`;

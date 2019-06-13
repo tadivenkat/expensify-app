@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ExpenseList Component Snapshot 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <h4>
+    Filters Applied: Text: 
+    , SortBy: 
+    amount
+    , startDate: 
+    01-Jan-1970
+    , endDate: 
+    01-Jan-1970
+  </h4>
+  <ExpenseListItem
+    expense={
+      Object {
+        "amount": 10000,
+        "createdAt": 8000,
+        "description": "pen",
+        "id": "1",
+        "note": "test note for test expense",
+      }
+    }
+    key="1"
+  />
+  <ExpenseListItem
+    expense={
+      Object {
+        "amount": 25000,
+        "createdAt": -35,
+        "description": "apple",
+        "id": "2",
+        "note": "test note for test expense",
+      }
+    }
+    key="2"
+  />
+  <ExpenseListItem
+    expense={
+      Object {
+        "amount": 6000,
+        "createdAt": 5000,
+        "description": "orange",
+        "id": "3",
+        "note": "test note for test expense",
+      }
+    }
+    key="3"
+  />
+  <ExpenseListItem
+    expense={
+      Object {
+        "amount": 35000,
+        "createdAt": 200,
+        "description": "mango",
+        "id": "4",
+        "note": "test note for test expense",
+      }
+    }
+    key="4"
+  />
+</div>
+`;
+
+exports[`Testing ExpenseList Component Snapshot with empty expenses as input 1`] = `
+<div>
+  <h1>
+    Expense List
+  </h1>
+  <h4>
+    Filters Applied: Text: 
+    , SortBy: 
+    amount
+    , startDate: 
+    01-Jan-1970
+    , endDate: 
+    01-Jan-1970
+  </h4>
+</div>
+`;

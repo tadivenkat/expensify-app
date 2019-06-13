@@ -7,8 +7,8 @@ import toJSON from 'enzyme-to-json';
 test('Testing Header component', () => {
     // Testcase using enzyme
     const wrapper = shallow(<Header/>);
-    //expect(wrapper.find('h1').text()).toBe('Keilon Software Solutions Private Ltd');
     expect(toJSON(wrapper)).toMatchSnapshot();
+    //expect(wrapper.find('h1').text()).toBe('Keilon Software Solutions Private Ltd');
     
     // Testcase using react-test-renderer
     //const renderer = new ReactShallowRenderer();
