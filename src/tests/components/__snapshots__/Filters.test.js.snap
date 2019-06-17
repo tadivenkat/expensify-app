@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Filters component correctly 1`] = `
+<div>
+  <input
+    name="TextFilter"
+    onChange={[Function]}
+    placeholder="Filter by text"
+    type="text"
+    value=""
+  />
+  <DatePicker
+    allowSameDay={false}
+    dateFormat="dd-MMM-yyyy"
+    dateFormatCalendar="LLLL yyyy"
+    disabled={false}
+    disabledKeyboardNavigation={false}
+    dropdownMode="scroll"
+    endDate={1000000}
+    inlineFocusSelectedMonth={false}
+    monthsShown={1}
+    nextMonthButtonLabel="Next month"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClickOutside={[Function]}
+    onFocus={[Function]}
+    onInputClick={[Function]}
+    onInputError={[Function]}
+    onKeyDown={[Function]}
+    onMonthChange={[Function]}
+    onSelect={[Function]}
+    onYearChange={[Function]}
+    preventOpenOnFocus={false}
+    previousMonthButtonLabel="Previous Month"
+    readOnly={false}
+    renderDayContents={[Function]}
+    selected={0}
+    selectsStart={true}
+    shouldCloseOnSelect={true}
+    showMonthYearPicker={false}
+    showTimeInput={false}
+    showTimeSelect={false}
+    startDate={0}
+    strictParsing={false}
+    timeCaption="Time"
+    timeInputLabel="Time"
+    timeIntervals={30}
+    title="Start Date"
+    todayButton="Today"
+    withPortal={false}
+  />
+  <DatePicker
+    allowSameDay={false}
+    dateFormat="dd-MMM-yyyy"
+    dateFormatCalendar="LLLL yyyy"
+    disabled={false}
+    disabledKeyboardNavigation={false}
+    dropdownMode="scroll"
+    inlineFocusSelectedMonth={false}
+    monthsShown={1}
+    nextMonthButtonLabel="Next month"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onClickOutside={[Function]}
+    onFocus={[Function]}
+    onInputClick={[Function]}
+    onInputError={[Function]}
+    onKeyDown={[Function]}
+    onMonthChange={[Function]}
+    onSelect={[Function]}
+    onYearChange={[Function]}
+    preventOpenOnFocus={false}
+    previousMonthButtonLabel="Previous Month"
+    readOnly={false}
+    renderDayContents={[Function]}
+    selected={1000000}
+    selectsEnd={true}
+    shouldCloseOnSelect={true}
+    showMonthYearPicker={false}
+    showTimeInput={false}
+    showTimeSelect={false}
+    strictParsing={false}
+    timeCaption="Time"
+    timeInputLabel="Time"
+    timeIntervals={30}
+    title="End Date"
+    todayButton="Today"
+    withPortal={false}
+  />
+  <select
+    onChange={[Function]}
+    value="amount"
+  >
+    <option
+      value="amount"
+    >
+      Amount
+    </option>
+    <option
+      value="date"
+    >
+      Date
+    </option>
+  </select>
+</div>
+`;

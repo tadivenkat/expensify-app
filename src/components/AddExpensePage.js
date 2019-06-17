@@ -20,7 +20,9 @@ export class AddExpensePage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => {
-    onSubmit: (expense) => dispatch(addExpenseAction(expense))
+    return {
+        onSubmit: (expense) => dispatch(addExpenseAction(expense))
+    };
 }
 
 export default connect(undefined, mapDispatchToProps)(AddExpensePage);
