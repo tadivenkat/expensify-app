@@ -1,4 +1,5 @@
 import filterAndSortExpenses from '../../selectors/expenses';
+import { totalExpenditure } from '../../selectors/expenses';
 import expenses from '../fixtures/expenses';
 
 test('Testing text filter', () => {
@@ -65,4 +66,19 @@ test('Testing sort by date', () => {
     };
     const result = filterAndSortExpenses(expenses, filters);
     expect(result).toEqual([expenses[1], expenses[3], expenses[2], expenses[0]]);
+});
+
+test('Total expenditure should be correct', () => {
+    const total = totalExpenditure(expenses);
+    expect(total).toEqual(76000);
+});
+
+test('Total expenditure should be zero if an empty array of expenses is passed', () => {
+    const total = totalExpenditure([]);
+    expect(total).toEqual(0);
+});
+
+test('Total expenditure should be correct even if array contains a single element', () => {
+    const total = totalExpenditure([expenses[0]]);
+    expect(total).toEqual(10000);
 });

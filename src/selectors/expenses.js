@@ -35,3 +35,12 @@ export default (expenses, {text, sortBy, startDate, endDate}) => {
         }
     });
 };
+
+// Returns total expenditure amount
+export const totalExpenditure = (expenses=[]) => {
+    let total = 0;
+    expenses.forEach(expense => {
+        total += expense.amount;
+    });
+    return total;
+};

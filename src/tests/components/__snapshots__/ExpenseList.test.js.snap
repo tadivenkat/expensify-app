@@ -14,6 +14,12 @@ exports[`Testing ExpenseList Component Snapshot 1`] = `
     , endDate: 
     01-Jan-1970
   </h4>
+  <h2>
+    You have 
+    4
+     expenses with a total expenditure of 
+    $ 760.00
+  </h2>
   <ExpenseListItem
     expense={
       Object {
@@ -79,5 +85,11 @@ exports[`Testing ExpenseList Component Snapshot with empty expenses as input 1`]
     , endDate: 
     01-Jan-1970
   </h4>
+  <h2>
+    You have 
+    0
+     expenses with a total expenditure of 
+    $ 0.00
+  </h2>
 </div>
 `;
