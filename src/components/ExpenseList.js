@@ -6,7 +6,6 @@ import {totalExpenditure} from '../selectors/expenses';
 import moment from 'moment';
 import numeral from 'numeral';
 
-
 export const ExpenseList = (props) => {
     const {text, sortBy, startDate, endDate} = props.filters;
     return (
