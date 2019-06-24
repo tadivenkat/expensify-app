@@ -13,6 +13,8 @@ import {setTextFilterAction, setStartDateFilterAction, setEndDateFilterAction} f
 import moment from 'moment';
 import './firebase/firebase';
 
+console.log("Environment", process.env.NODE_ENV);
+
 const mainStore = configureStore();
 
 mainStore.dispatch(setStartDateFilterAction(moment().startOf('month').valueOf()));
