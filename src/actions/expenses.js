@@ -8,22 +8,19 @@ export const addExpenseAction = (expense) => {
 };
 
 export const startAddExpenseAction = (expenseData = {}) => {
-    const {description, amount, note, createdAt} = expenseData;
+    const {description = '', amount = 0, note = '', createdAt = 0} = expenseData;
     const expense = {description, amount, note, createdAt};
     return (dispatch) => {
-        database.ref('expenses').push(expense).then((data) => {
+        return database.ref('expenses').push(expense).then((data) => {
             dispatch(addExpenseAction({
                 id: data.key,
-                description,
-                amount,
-                note,
-                createdAt
+                ...expense
             }));
         }).catch((error) => {
             console.log("Error adding expense", error);
         });
     }
-}
+};
 
 export const removeExpenseAction = ({id} = {}) => {
     return {
