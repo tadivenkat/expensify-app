@@ -66,3 +66,12 @@ test('Testing removing an expense which is not present in the state', () => {
     const newState = expensesReducer(expenses, action);
     expect(newState.length).toBe(expenses.length);
 });
+
+test('Should set expenses array', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        payload: expenses
+    }
+    const state = expensesReducer([], action);
+    expect(state).toEqual(expenses);
+});

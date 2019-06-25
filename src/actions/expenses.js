@@ -41,3 +41,27 @@ export const editExpenseAction = ({id, amount, description, note, createdAt} = {
         }
     }
 };
+
+export const setExpensesAction = (expenses = []) => {
+    return {
+        type: 'SET_EXPENSES',
+        payload: expenses
+    }
+};
+
+export const startSetExpensesAction = () => {
+    const expenses = [];
+    return (dispatch) => {
+        return database.ref('expenses').once('value').then((snapshot) => {
+            snapshot.forEach((childSnapshot) => {
+                expenses.push({
+                    id: childSnapshot.key,
+                    ...childSnapshot.val()
+                });
+            });
+            dispatch(setExpensesAction(expenses));
+        }).catch((error) => {
+            console.log("Error retreiving expenses", error);
+        });
+    };
+};
