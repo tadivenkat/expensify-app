@@ -58,8 +58,7 @@ export const startEditExpenseAction = (expenseData = {}) => {
     return (dispatch) => {
         return database.ref(`expenses/${expenseData.id}`).update(expense).then(() => {
             dispatch(editExpenseAction({
-                id: expenseData.id,
-                ...expense
+                ...expenseData
             }));
         }).catch((error) => {
             console.log("Error updating expense", error);
