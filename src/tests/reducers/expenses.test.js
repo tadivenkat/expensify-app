@@ -52,7 +52,7 @@ test('Should not edit expense if expense is not found', () => {
 test('Testing remove expense action of expenses reducer', () => {
     const action = {
         type: 'REMOVE_EXPENSE',
-        id: expenses[1].id
+        payload: expenses[1].id
     };
     const newState = expensesReducer(expenses, action);
     expect(newState).not.toContain(expenses[1]);

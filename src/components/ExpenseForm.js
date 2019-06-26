@@ -51,7 +51,6 @@ class ExpenseForm extends React.Component {
                 createdAt: moment(date).valueOf()
             };
         });
-        console.log(moment(date).valueOf());
     }
 
     onFormSubmit = (event) => {

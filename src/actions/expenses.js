@@ -25,8 +25,18 @@ export const startAddExpenseAction = (expenseData = {}) => {
 export const removeExpenseAction = ({id} = {}) => {
     return {
         type: 'REMOVE_EXPENSE',
-        id 
+        payload: id 
     }
+};
+
+export const startRemoveExpenseAction = ({id} = {}) => {
+    return (dispatch) => {
+        return database.ref(`expenses/${id}`).remove().then(() => {
+            dispatch(removeExpenseAction({id}));
+        }).catch((error) => {
+            console.log("Error during removing the expense", error);
+        });
+    };
 };
 
 export const editExpenseAction = ({id, amount, description, note, createdAt} = {}) => {
@@ -39,6 +49,21 @@ export const editExpenseAction = ({id, amount, description, note, createdAt} = {
             note,
             createdAt
         }
+    }
+};
+
+export const startEditExpenseAction = (expenseData = {}) => {
+    const {description = '', amount = 0, note = '', createdAt = 0} = expenseData;
+    const expense = {description, amount, note, createdAt};
+    return (dispatch) => {
+        return database.ref(`expenses/${expenseData.id}`).update(expense).then(() => {
+            dispatch(editExpenseAction({
+                id: expenseData.id,
+                ...expense
+            }));
+        }).catch((error) => {
+            console.log("Error updating expense", error);
+        });
     }
 };
 

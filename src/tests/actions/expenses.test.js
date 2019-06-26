@@ -1,4 +1,6 @@
-import {setExpensesAction, addExpenseAction, startAddExpenseAction, editExpenseAction, removeExpenseAction, startSetExpensesAction} from '../../actions/expenses';
+import { setExpensesAction, addExpenseAction, startAddExpenseAction, 
+        editExpenseAction, startEditExpenseAction, removeExpenseAction, startRemoveExpenseAction,
+        startSetExpensesAction } from '../../actions/expenses';
 import expenses from '../fixtures/expenses';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -22,9 +24,25 @@ beforeEach(() => {
 test('Testing removeExpenseAction', () => {
     const action = removeExpenseAction({id: '1234'});
     expect(action).toEqual({
-        id: '1234',
-        type: 'REMOVE_EXPENSE'
+        type: 'REMOVE_EXPENSE',
+        payload: '1234'
     });
+});
+
+test('Should remove expense from the database', (done) => {
+    const store = createMockStore({});
+    store.dispatch(startRemoveExpenseAction(expenses[0])).then(() => {
+        const actions = store.getActions();
+        expect(actions[0]).toEqual({
+            type: 'REMOVE_EXPENSE',
+            payload: expenses[0].id
+        });
+        // Check if the expense is removed from the database
+        return database.ref(`expenses/${expenses[0].id}`).once('value');
+    }).then((snapshot) => {
+        expect(snapshot.val()).toBeNull();
+        done();
+    });    
 });
 
 test('Testing editExpenseAction', () => {
@@ -48,6 +66,30 @@ test('Testing editExpenseAction', () => {
     });
 });
 
+test('Should update the expense in the database', (done) => {
+    const store = createMockStore({});
+    // Let's change the description
+    expenses[0].description = "This is changed description";
+    store.dispatch(startEditExpenseAction(expenses[0])).then(() => {
+        const actions = store.getActions();
+        expect(actions[0]).toEqual({
+            type: 'EDIT_EXPENSE',
+            payload: expenses[0]
+        });
+        // Fetch the updated data
+        return database.ref(`expenses/${actions[0].payload.id}`).once('value');
+    }).then((snapshot) => {
+        const {description, amount, note, createdAt} = expenses[0];
+        expect(snapshot.val()).toEqual({
+            description,
+            amount,
+            note,
+            createdAt
+        });
+        done();
+    });   
+});
+
 test('Should setup addExpenseAction with provided values', () => {
     const action = addExpenseAction(expenses[0]);
     expect(action). toEqual({
@@ -56,7 +98,7 @@ test('Should setup addExpenseAction with provided values', () => {
     });
 });
 
-test('Should add expense to database and redux store', (done) => {
+test('Should add expense to database', (done) => {
     const store = createMockStore({});
     const expenseData = {
         description: expenses[0].description,
