@@ -2,19 +2,21 @@ import React from 'react';
 import {connect} from 'react-redux';
 import ExpenseForm from './ExpenseForm';
 import {startEditExpenseAction, startRemoveExpenseAction} from '../actions/expenses';
+import Header from './Header';
 
 export class EditExpensePage extends React.Component {
     onSubmit = (expense) => {
         this.props.editExpenseAction(expense);
-        this.props.history.push('/'); 
+        this.props.history.push('/dashboard'); 
     };
     onRemove = () => {
         this.props.removeExpenseAction(this.props.expense);
-        this.props.history.push('/');
+        this.props.history.push('/dashboard');
     };
     render() {
         return (
             <div>
+                <Header/>
                 <h1>Editing Expense: {this.props.match.params.id}</h1>
                 <ExpenseForm 
                     expense={this.props.expense}

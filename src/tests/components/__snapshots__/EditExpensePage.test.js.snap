@@ -2,6 +2,7 @@
 
 exports[`Should render EditExpense page correctly 1`] = `
 <div>
+  <Connect(Header) />
   <h1>
     Editing Expense: 
     1

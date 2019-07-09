@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing Header component 1`] = `
+exports[`Should match the snapshot 1`] = `
 <div>
   <header>
     <h1>
@@ -12,7 +12,7 @@ exports[`Testing Header component 1`] = `
           <td>
             <NavLink
               activeClassName="is-active"
-              to="/"
+              to="/dashboard"
             >
               Home
             </NavLink>
@@ -26,28 +26,11 @@ exports[`Testing Header component 1`] = `
             </NavLink>
           </td>
           <td>
-            <NavLink
-              activeClassName="is-active"
-              to="/edit/x"
+            <button
+              onClick={[MockFunction]}
             >
-              Edit Expense
-            </NavLink>
-          </td>
-          <td>
-            <NavLink
-              activeClassName="is-active"
-              to="/view"
-            >
-              View Expenses
-            </NavLink>
-          </td>
-          <td>
-            <NavLink
-              activeClassName="is-active"
-              to="/help"
-            >
-              Help
-            </NavLink>
+              Log Out
+            </button>
           </td>
         </tr>
       </tbody>
