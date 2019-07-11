@@ -4,8 +4,8 @@ import {Provider} from 'react-redux';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-datepicker/dist/react-datepicker.css';
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
+//import 'normalize.css/normalize.css';
+//import './styles/styles.scss';
 
 import AppRouter, {history} from './router/AppRouter';
 

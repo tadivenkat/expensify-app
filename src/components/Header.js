@@ -5,16 +5,19 @@ import {startLogOut} from '../actions/auth';
 
 export const Header = (props) => {
     return (
-        <div>
-            <header>
-                <h1>Keilon Software Solutions Private Ltd</h1>
-                <table><tbody><tr>
-                    <td><NavLink activeClassName="is-active" to="/dashboard">Home</NavLink></td>
-                    <td><NavLink activeClassName="is-active" to="/create">Add Expense</NavLink></td>
-                    <td><button onClick={props.startLogOut}>Log Out</button></td>
-                </tr></tbody></table>
-            </header>
-        </div>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a className="navbar-brand" href="/dashboard"><h1>Keilon Software Solutions Private Ltd</h1></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item"><NavLink to="/dashboard">Home</NavLink></li>
+                    <li className="nav-item"><NavLink to="/create">Add Expense</NavLink></li>
+                    <li className="nav-item"><button className="btn btn-primary btn-lg" onClick={props.startLogOut}><i class="fas fa-sign-out-alt">Logout</i></button></li>
+                </ul>
+            </div>
+        </nav>
     );
 };
 

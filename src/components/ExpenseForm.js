@@ -104,7 +104,7 @@ class ExpenseForm extends React.Component {
                         onChange={this.onDateChange}
                         title="Created At"
                         dateFormat="dd-MMM-yyyy"/>
-                    <input type="submit" value="Save"/>
+                    <button onClick={this.onFormSubmit} className="btn btn-primary">Save</button>
                 </form>                                        
             </div>
         );

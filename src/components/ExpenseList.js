@@ -11,8 +11,10 @@ export const ExpenseList = (props) => {
     return (
         <div>
             <h1>Expense List</h1>
-            <h4>Filters Applied: Text: {text}, SortBy: {sortBy}, startDate: {moment(startDate).format('DD-MMM-YYYY')}, endDate: {moment(endDate).format('DD-MMM-YYYY')}</h4>
-            <h2>You have {props.expenses.length} {props.expenses.length > 1 ? 'expenses' : 'expense'} with a total expenditure of {numeral(totalExpenditure(props.expenses)/100).format('$ 0,0.00')}</h2>
+            <p>
+                You have {props.expenses.length} {props.expenses.length === 1 ? 'expense' : 'expenses'} with a total 
+                expenditure of {numeral(totalExpenditure(props.expenses)/100).format('$ 0,0.00')}
+            </p>
             {props.expenses.map((expense) => <ExpenseListItem 
                                                     key={expense.id} 
                                                     expense={expense}/>)}

@@ -1,0 +1,26 @@
+body {
+    font-family: 'Montserrat-Black';
+}
+
+table, tr, td {
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.navbar {
+    margin-bottom: 15px;
+}
+
+ul, li {
+  padding: 10px;  
+}
+
+.container-fluid {
+    padding: 1% 1%;
+}
