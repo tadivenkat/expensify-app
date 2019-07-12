@@ -23,51 +23,23 @@ export class Filters extends React.Component {
     render() {
         const filters = this.props.filters;
         return (
-            <div>
-                <h1>Apply Filters</h1>
-                <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>Text</td>
-                            <td>
-                                <input 
-                                    type="text" 
-                                    name="TextFilter" 
-                                    placeholder="Filter by text"
-                                    value={filters.text} 
-                                    onChange={this.setTextFilterAction}/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>
-                                SortBy
-                            </td>
-                            <td>
+            <div className="content-container">
+                <div className="input-group">
+                    <div className="input-group-item">
+                        <input 
+                            type="text" 
+                            name="TextFilter" 
+                            placeholder="Search Expenses"
+                            value={filters.text} 
+                            onChange={this.setTextFilterAction}/>
+                    </div>
+                    <div className="input-group-item">
                                 <select value={filters.sortBy} onChange={this.setSortByFilterAction}>
                                     <option value="amount">Amount</option>
                                     <option value="date">Date</option>
                                 </select>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>
-                                startDate
-                            </td>
-                            <td>
+                    </div>
+                    <div className="input-group-item">
                                 <DatePicker
                                     todayButton={"Today"}
                                     selectsStart 
@@ -77,19 +49,8 @@ export class Filters extends React.Component {
                                     onChange={this.setStartDateFilterAction}
                                     title="Start Date"
                                     dateFormat="dd-MMM-yyyy"/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td>
-                                endDate
-                            </td>
-                            <td>
+                    </div>
+                    <div className="input-group-item">
                                 <DatePicker
                                     todayButton={"Today"}
                                     selectsEnd
@@ -97,11 +58,7 @@ export class Filters extends React.Component {
                                     onChange={this.setEndDateFilterAction}
                                     title="End Date"
                                     dateFormat="dd-MMM-yyyy"/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    </div>
                 </div>
             </div>
         );

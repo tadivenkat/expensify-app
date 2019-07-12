@@ -79,34 +79,36 @@ class ExpenseForm extends React.Component {
     }
     render() {
         return (
-            <div>
+            <form className="form" onSubmit={this.onFormSubmit}>
                 {this.state.error && <p>{this.state.error}</p>}
-                <form onSubmit={this.onFormSubmit}>
-                    <input 
-                        type="text" 
-                        placeholder="Description" 
-                        autoFocus 
-                        value={this.state.description} 
-                        onChange={this.onDescriptionChange} />
-                    <input 
-                        type="number" 
-                        placeholder="Amount"
-                        value={this.state.amount}
-                        onChange={this.onAmountChange}/>
-                    <textarea 
-                        name="note" 
-                        placeholder="Add a Note for this Expense"
-                        value={this.state.note}
-                        onChange={this.onNoteChange}></textarea>
-                    <DatePicker 
-                        todayButton={"Today"}
-                        selected={new Date(this.state.createdAt)} 
-                        onChange={this.onDateChange}
-                        title="Created At"
-                        dateFormat="dd-MMM-yyyy"/>
-                    <button onClick={this.onFormSubmit} className="btn btn-primary">Save</button>
-                </form>                                        
-            </div>
+                <input 
+                    type="text" 
+                    placeholder="Description" 
+                    autoFocus 
+                    value={this.state.description} 
+                    onChange={this.onDescriptionChange} />
+                <input 
+                    type="number" 
+                    placeholder="Amount"
+                    value={this.state.amount}
+                    onChange={this.onAmountChange}/>
+                <textarea 
+                    name="note" 
+                    placeholder="Add a Note for this Expense"
+                    value={this.state.note}
+                    onChange={this.onNoteChange}
+                    height="5">
+                </textarea>
+                <DatePicker 
+                    todayButton={"Today"}
+                    selected={new Date(this.state.createdAt)} 
+                    onChange={this.onDateChange}
+                    title="Created At"
+                    dateFormat="dd-MMM-yyyy"/>
+                <div>
+                    <button onClick={this.onFormSubmit} className="btn btn-primary">Save Expense</button>
+                </div>                    
+            </form>                                        
         );
     }
 }
