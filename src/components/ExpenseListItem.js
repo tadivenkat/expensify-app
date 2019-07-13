@@ -6,7 +6,7 @@ import numeral from 'numeral';
 const ExpenseListItem = (props) => {
     const {id, amount, createdAt, description, note} = props.expense;
     return (
-        <div className="card card-body mb-3">
+        <div className="list-group-item list-group-item-action">
             <Link to={`/edit/${id}`}><h2>{description}</h2></Link>
             <p>Id: {id}</p>
             <p>Amount: {numeral(amount/100).format('$ 0,0.00')}</p>

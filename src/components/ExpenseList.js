@@ -13,9 +13,11 @@ export const ExpenseList = (props) => {
                 You have {props.expenses.length} {props.expenses.length === 1 ? 'expense' : 'expenses'} with a total 
                 expenditure of {numeral(totalExpenditure(props.expenses)/100).format('$ 0,0.00')}
             </p>
-            {props.expenses.map((expense) => <ExpenseListItem 
+            <div className="list-group">
+                {props.expenses.map((expense) => <ExpenseListItem 
                                                     key={expense.id} 
                                                     expense={expense}/>)}
+            </div>                                                    
         </div>
     );
 };

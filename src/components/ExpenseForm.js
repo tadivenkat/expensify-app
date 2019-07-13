@@ -82,7 +82,12 @@ class ExpenseForm extends React.Component {
             <form className="form" onSubmit={this.onFormSubmit}>
                 {this.state.error && <p className="bg-danger text-white">{this.state.error}</p>}
                 <div className="form-group">
-                    <label for="description">Description</label>
+                    <label for="description">
+                        Description <i 
+                                        class="far fa-question-circle" 
+                                        data-toggle="tooltip" 
+                                        title="Enter Description for this expense."/>
+                    </label>
                     <input 
                         type="text"
                         id="description"
@@ -93,7 +98,12 @@ class ExpenseForm extends React.Component {
                         onChange={this.onDescriptionChange} />
                 </div>
                 <div className="form-group">
-                    <label for="amount">Amount</label>
+                    <label for="amount">
+                        Amount <i 
+                                class="far fa-question-circle" 
+                                data-toggle="tooltip" 
+                                title="Enter amount of Rupees spent for this expense."/>
+                    </label>
                     <input
                         id="amount"
                         type="number"
@@ -103,7 +113,12 @@ class ExpenseForm extends React.Component {
                         onChange={this.onAmountChange}/>
                 </div>
                 <div className="form-group">
-                    <label for="note">Note</label>
+                    <label for="note">
+                        Note <i 
+                                class="far fa-question-circle" 
+                                data-toggle="tooltip" 
+                                title="Enter note for this expense. Feel free to enter as much information as you want to save for this expense."/>
+                    </label>
                     <textarea 
                         id="note"
                         name="note"
@@ -115,11 +130,16 @@ class ExpenseForm extends React.Component {
                     </textarea>
                 </div>
                 <div className="form-group">
-                    <label for="createdAt">Created At</label>
+                    <label for="createdAt">
+                        Created At <i 
+                                    class="far fa-question-circle" 
+                                    data-toggle="tooltip" 
+                                    title="Select the date on which you spent this expense. Today is selected by default."/>
+                    </label>
                     <DatePicker
                         id="createdAt"
                         name="createdAt"
-                        className="form-control" 
+                        className="form-control"
                         todayButton={"Today"}
                         selected={new Date(this.state.createdAt)} 
                         onChange={this.onDateChange}
