@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testing ExpenseListItem Component Snapshot 1`] = `
-<div>
+<div
+  className="card card-body mb-3"
+>
   <Link
     to="/edit/1"
   >

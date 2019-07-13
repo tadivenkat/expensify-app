@@ -1,38 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should NOT update amount state when the amount input has invalid value 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -61,47 +106,96 @@ exports[`Should NOT update amount state when the amount input has invalid value 
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Should render error message when the form is invalid 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -130,50 +224,101 @@ exports[`Should render error message when the form is invalid 1`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Should render error message when the form is invalid 2`] = `
-<div>
-  <p>
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <p
+    className="bg-danger text-white"
+  >
     Please enter description and amount
   </p>
-  <form
-    onSubmit={[Function]}
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -202,47 +347,96 @@ exports[`Should render error message when the form is invalid 2`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Should update amount state when the amount input changes 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value="30"
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -271,47 +465,96 @@ exports[`Should update amount state when the amount input changes 1`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Should update description state when input changes 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value="Test Expense Description"
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -340,47 +583,96 @@ exports[`Should update description state when input changes 1`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Should update note state when textarea changes 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value="Test Expense Note"
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -409,47 +701,96 @@ exports[`Should update note state when textarea changes 1`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Testing ExpenseForm component snapshot 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value=""
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -478,47 +819,96 @@ exports[`Testing ExpenseForm component snapshot 1`] = `
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;
 
 exports[`Testing ExpenseForm component snapshot with default expense property 1`] = `
-<div>
-  <form
-    onSubmit={[Function]}
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
   >
+    <label
+      for="description"
+    >
+      Description
+    </label>
     <input
       autoFocus={true}
+      className="form-control"
+      id="description"
       onChange={[Function]}
-      placeholder="Description"
+      placeholder="Enter Description"
       type="text"
       value="pen"
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="amount"
+    >
+      Amount
+    </label>
     <input
+      className="form-control"
+      id="amount"
       onChange={[Function]}
       placeholder="Amount"
       type="number"
       value={100}
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="note"
+    >
+      Note
+    </label>
     <textarea
+      className="form-control"
+      id="note"
       name="note"
       onChange={[Function]}
       placeholder="Add a Note for this Expense"
+      rows="7"
       value="test note for test expense"
     />
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      for="createdAt"
+    >
+      Created At
+    </label>
     <DatePicker
       allowSameDay={false}
+      className="form-control"
       dateFormat="dd-MMM-yyyy"
       dateFormatCalendar="LLLL yyyy"
       disabled={false}
       disabledKeyboardNavigation={false}
       dropdownMode="scroll"
+      id="createdAt"
       inlineFocusSelectedMonth={false}
       monthsShown={1}
+      name="createdAt"
       nextMonthButtonLabel="Next month"
       onBlur={[Function]}
       onChange={[Function]}
@@ -547,10 +937,14 @@ exports[`Testing ExpenseForm component snapshot with default expense property 1`
       todayButton="Today"
       withPortal={false}
     />
-    <input
-      type="submit"
-      value="Save"
-    />
-  </form>
-</div>
+  </div>
+  <div>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      Save Expense
+    </button>
+  </div>
+</form>
 `;

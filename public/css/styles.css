@@ -28,6 +28,10 @@ h1 {
     margin-right: 10px;
 }
 
+.form-control {
+    margin-right: 10px;
+}
+
 .box-layout {
     align-items: center;
     background: url('/images/bg.jpg');

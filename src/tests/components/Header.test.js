@@ -27,6 +27,6 @@ test('Should match the snapshot', () => {
 });
 
 test('logout method should be called when logout button is clicked', () => {
-    wrapper.find('button').simulate('click');
+    wrapper.find('button').at(1).simulate('click');
     expect(startLogOut).toHaveBeenCalled();
 });

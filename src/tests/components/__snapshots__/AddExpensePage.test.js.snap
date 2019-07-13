@@ -4,10 +4,14 @@ exports[`Should render AddExpensePage correctly 1`] = `
 <div>
   <Connect(Header) />
   <h1>
-    Add Expense Page
+    Add Expense
   </h1>
-  <ExpenseForm
-    onSubmit={[Function]}
-  />
+  <div
+    className="content-container"
+  >
+    <ExpenseForm
+      onSubmit={[Function]}
+    />
+  </div>
 </div>
 `;

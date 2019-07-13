@@ -1,16 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render Filters component correctly 1`] = `
-<div>
+<form
+  class="form-inline"
+  onSubmit={[Function]}
+>
   <input
+    class="form-control"
     name="TextFilter"
     onChange={[Function]}
-    placeholder="Filter by text"
+    placeholder="Search Expenses"
     type="text"
     value=""
   />
+  <select
+    class="form-control"
+    onChange={[Function]}
+    value="amount"
+  >
+    <option
+      value="amount"
+    >
+      Amount
+    </option>
+    <option
+      value="date"
+    >
+      Date
+    </option>
+  </select>
   <DatePicker
     allowSameDay={false}
+    class="form-control"
     dateFormat="dd-MMM-yyyy"
     dateFormatCalendar="LLLL yyyy"
     disabled={false}
@@ -51,6 +72,7 @@ exports[`Should render Filters component correctly 1`] = `
   />
   <DatePicker
     allowSameDay={false}
+    class="form-control"
     dateFormat="dd-MMM-yyyy"
     dateFormatCalendar="LLLL yyyy"
     disabled={false}
@@ -87,20 +109,5 @@ exports[`Should render Filters component correctly 1`] = `
     todayButton="Today"
     withPortal={false}
   />
-  <select
-    onChange={[Function]}
-    value="amount"
-  >
-    <option
-      value="amount"
-    >
-      Amount
-    </option>
-    <option
-      value="date"
-    >
-      Date
-    </option>
-  </select>
-</div>
+</form>
 `;

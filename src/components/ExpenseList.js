@@ -3,11 +3,9 @@ import {connect} from 'react-redux';
 import ExpenseListItem from './ExpenseListItem';
 import filterExpenses from '../selectors/expenses';
 import {totalExpenditure} from '../selectors/expenses';
-import moment from 'moment';
 import numeral from 'numeral';
 
 export const ExpenseList = (props) => {
-    const {text, sortBy, startDate, endDate} = props.filters;
     return (
         <div>
             <h1>Expense List</h1>

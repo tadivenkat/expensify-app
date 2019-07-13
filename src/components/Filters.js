@@ -20,47 +20,43 @@ export class Filters extends React.Component {
     setSortByFilterAction = (event) => {
         this.props.setSortByFilterAction(event.target.value);
     }
+    onSubmit = (event) => {
+        event.preventDefault();
+    }
     render() {
         const filters = this.props.filters;
         return (
-            <div className="content-container">
-                <div className="input-group">
-                    <div className="input-group-item">
-                        <input 
-                            type="text" 
-                            name="TextFilter" 
-                            placeholder="Search Expenses"
-                            value={filters.text} 
-                            onChange={this.setTextFilterAction}/>
-                    </div>
-                    <div className="input-group-item">
-                                <select value={filters.sortBy} onChange={this.setSortByFilterAction}>
-                                    <option value="amount">Amount</option>
-                                    <option value="date">Date</option>
-                                </select>
-                    </div>
-                    <div className="input-group-item">
-                                <DatePicker
-                                    todayButton={"Today"}
-                                    selectsStart 
-                                    selected={moment(filters.startDate).valueOf()}
-                                    startDate={moment(filters.startDate).valueOf()}
-                                    endDate={moment(filters.endDate).valueOf()} 
-                                    onChange={this.setStartDateFilterAction}
-                                    title="Start Date"
-                                    dateFormat="dd-MMM-yyyy"/>
-                    </div>
-                    <div className="input-group-item">
-                                <DatePicker
-                                    todayButton={"Today"}
-                                    selectsEnd
-                                    selected={moment(filters.endDate).valueOf()} 
-                                    onChange={this.setEndDateFilterAction}
-                                    title="End Date"
-                                    dateFormat="dd-MMM-yyyy"/>
-                    </div>
-                </div>
-            </div>
+            <form class="form-inline" onSubmit={this.onSubmit}>
+                <input 
+                    type="text"
+                    class="form-control"
+                    name="TextFilter" 
+                    placeholder="Search Expenses"
+                    value={filters.text} 
+                    onChange={this.setTextFilterAction}/>
+                <select class="form-control" value={filters.sortBy} onChange={this.setSortByFilterAction}>
+                    <option value="amount">Amount</option>
+                    <option value="date">Date</option>
+                </select>
+                <DatePicker
+                    class="form-control"
+                    todayButton={"Today"}
+                    selectsStart 
+                    selected={moment(filters.startDate).valueOf()}
+                    startDate={moment(filters.startDate).valueOf()}
+                    endDate={moment(filters.endDate).valueOf()} 
+                    onChange={this.setStartDateFilterAction}
+                    title="Start Date"
+                    dateFormat="dd-MMM-yyyy"/>
+                <DatePicker
+                    class="form-control"
+                    todayButton={"Today"}
+                    selectsEnd
+                    selected={moment(filters.endDate).valueOf()} 
+                    onChange={this.setEndDateFilterAction}
+                    title="End Date"
+                    dateFormat="dd-MMM-yyyy"/>
+            </form>
         );
     }
 };
