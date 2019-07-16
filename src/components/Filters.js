@@ -26,20 +26,20 @@ export class Filters extends React.Component {
     render() {
         const filters = this.props.filters;
         return (
-            <form class="form-inline" onSubmit={this.onSubmit}>
+            <form className="form-inline" onSubmit={this.onSubmit}>
                 <input 
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     name="TextFilter" 
                     placeholder="Search Expenses"
                     value={filters.text} 
                     onChange={this.setTextFilterAction}/>
-                <select class="form-control" value={filters.sortBy} onChange={this.setSortByFilterAction}>
+                <select className="form-control" value={filters.sortBy} onChange={this.setSortByFilterAction}>
                     <option value="amount">Amount</option>
                     <option value="date">Date</option>
                 </select>
                 <DatePicker
-                    class="form-control"
+                    className="form-control"
                     todayButton={"Today"}
                     selectsStart 
                     selected={moment(filters.startDate).valueOf()}
@@ -49,7 +49,7 @@ export class Filters extends React.Component {
                     title="Start Date"
                     dateFormat="dd-MMM-yyyy"/>
                 <DatePicker
-                    class="form-control"
+                    className="form-control"
                     todayButton={"Today"}
                     selectsEnd
                     selected={moment(filters.endDate).valueOf()} 

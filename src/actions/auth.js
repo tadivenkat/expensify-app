@@ -11,7 +11,15 @@ export const loginAction = ({uid}={}) => {
 
 export const startLogin = () => {
     return (dispatch) => {
-        return firebase.auth().signInWithPopup(googleProvider);
+        return firebase.auth().signInWithPopup(googleProvider).then((result) => {
+            console.log("result.credential.accessToken", result.credential.accessToken);
+            console.log("result.user.displayName", result.user.displayName);
+            console.log("result.user.email", result.user.email);
+            console.log("result.user.phoneNumber", result.user.phoneNumber);
+            console.log("result.user.photoURL", result.user.photoURL);
+        }).catch((error) => {
+            console.log(error);
+        });
     }
 };
 

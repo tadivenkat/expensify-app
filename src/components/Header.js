@@ -14,7 +14,7 @@ export const Header = (props) => {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item"><NavLink to="/dashboard">Home</NavLink></li>
                     <li className="nav-item"><NavLink to="/create">Add Expense</NavLink></li>
-                    <li className="nav-item"><button className="btn btn-primary btn-lg" onClick={props.startLogOut}><i class="fas fa-sign-out-alt"></i>Logout</button></li>
+                    <li className="nav-item"><button className="btn btn-primary btn-lg" onClick={props.startLogOut}><i className="fas fa-sign-out-alt"></i>Logout</button></li>
                 </ul>
             </div>
         </nav>
